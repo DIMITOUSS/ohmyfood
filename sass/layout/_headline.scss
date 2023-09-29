@@ -1,0 +1,19 @@
+.headline{
+    
+    text-align: center;
+    background: var(--Background, #F6F6F6);
+    font-family: $contentFont;
+
+    button{
+        width: 13.625rem;
+  height: 3.125rem;
+  font-size: 1rem;
+border: transparent;
+  border-radius: 1.5625rem;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  color: #F6F6F6;
+  @include boxshadow;
+ }
+  padding-bottom: 3rem;
+  }
+ 
