@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+header {
+  position: relative;
+}
+header .logo {
+  padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--White, #FFF);
+  font-family: "Shrikhand";
+  color: black;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.headline {
+  text-align: center;
+  background: var(--Background, #F6F6F6);
+  font-family: "Roboto";
+  padding-bottom: 3rem;
+}
+.headline button {
+  width: 13.625rem;
+  height: 3.125rem;
+  font-size: 1rem;
+  border: transparent;
+  border-radius: 1.5625rem;
+  background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
+  color: #F6F6F6;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.f {
+  font-family: "Roboto";
+  background: var(--White, #FFF);
+}
+.f ol {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+.f li {
+  height: 4.52369rem;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 1.25rem;
+  border-radius: 1.25rem;
+  /* Shadow/Instructions */
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.f li ::before {
+  background-color: #9356DC;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  counter-increment: my-sec-counter;
+  content: counter(my-sec-counter);
+  left: 5rem;
+}
+.f i {
+  padding-right: 1.25rem;
+}
+
+@media (max-width: 767px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.125rem;
+    color: #353535;
+    gap: 1.0625rem;
+    background: var(--Grey-2, #EAEAEA);
+    font-family: "Roboto";
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

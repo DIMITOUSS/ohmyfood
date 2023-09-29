@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
+@import 'sass/helpers/variables';
+@import 'sass/helpers/mixin';
+@import 'sass/layout/header';
+@import 'sass/layout/sections';
+
+
+
+
+@media (max-width :767px) {
+*{
+        box-sizing: border-box;
+
+margin: 0;   
+ }
+       
+ 
+    .localisation{
+        @include flexcernter;
+height: 3.125rem;
+color: #353535;
+gap: 1.0625rem;
+  background: var(--Grey-2, #EAEAEA);
+  font-family: $contentFont;
+
+ 
+}
+
+  
+  
+    }
+
+
