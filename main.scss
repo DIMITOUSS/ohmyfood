@@ -5,6 +5,11 @@
 @import 'sass/layout/header';
 @import 'sass/layout/headline';
 @import 'sass/layout/fonctionnement';
+@import 'sass/layout/restaurent';
+@import 'sass/layout/footer';
+@import 'sass/pages/menu.scss';
+
+
 
 
 
@@ -15,7 +20,6 @@
  
     .localisation{
         @include flexcernter;
-height: 3.125rem;
 color: #353535;
 gap: 1.0625rem;
   background: var(--Grey-2, #EAEAEA);
