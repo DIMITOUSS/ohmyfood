@@ -1,0 +1,142 @@
+@import 'sass/helpers/variables';
+
+
+
+
+  
+.section-title{
+  padding: 1rem;
+ 
+
+  @media (min-width:768px) {
+
+    margin-left: 10.25rem;
+  
+  }
+}
+  
+ 
+  
+.restaurent{
+background-color: #F6F6F6;
+  .restaurent_card{
+    display:grid;
+      grid-template-columns: repeat(1,1fr);
+    margin: 1rem;
+    @media (min-width:768px){
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 2rem;
+    margin-left: 11.25rem;
+    margin-right: 11.25rem;
+
+      
+    }
+   .new{
+      position: relative;
+    
+    }
+    .new::before{
+      width: 5rem;
+      height: 1.8125rem;
+      flex-shrink: 0;
+      border-radius: 0.125rem;
+      text-align: center;
+  @include flexcernter;
+      position: absolute;
+      content: "Nouveau";
+      top: 1rem;
+      right: 1rem;
+      color: $greenFont;
+      background: $green;
+    }
+    
+    
+      }
+      
+      .card {
+        height: 15.6875rem;
+
+        border-radius:0.9375rem ;
+        background-color: white;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+       margin-bottom: 1rem;
+       padding-bottom: 1rem;
+       
+          &-title {
+        
+            font-family: $contentFont;
+        
+          }
+          &__image {
+            height: 11rem;
+
+           background-size:cover;
+            width: 100%;
+            border-top-right-radius: 0.9375rem;
+            border-top-left-radius: 0.9375rem;
+          }
+        
+          &__image-1{
+
+            background-image: url(../../images/restaurants/menu-1.jpg);
+          }
+          &__image-2{
+            background-image: url(../../images/restaurants/menu-2.jpg);
+            
+          }
+          &__image-3{
+            background-image: url(../../images/restaurants/menu-3.jpg);
+          }
+          &__image-4{
+            background-image: url(../../images/restaurants/menu-4.jpg);
+            
+          }
+          &-content{
+
+            padding: 1rem;
+
+            font-family: $contentFont;
+            & h3,p{
+              margin: 0;
+              position: relative;
+            }
+    
+            & i{
+              font-size: 1.5rem;
+              flex-shrink: 0;             position: absolute;
+             right: 1rem;
+             bottom: 7%;
+            transform:  translateY(-50%) ;
+            pointer-events: none;
+             
+          
+            }
+            .fa-solid{
+              background: linear-gradient(#FF79DA, #9356DC);
+              background-clip: text;
+              -webkit-background-clip: text;
+              color: transparent;
+              opacity: 0;
+              pointer-events: none;
+            }
+            &:hover .fa-solid {
+              opacity: 1;
+              pointer-events: none;
+            }
+            &:checked .fa-solid{
+              opacity: 0;
+
+            }
+           
+           
+          }
+      }
+      
+      .heart-icons{
+        background-color: #FF79DA;
+      }
+}
+  
+ 
+  

@@ -1,12 +1,20 @@
 .fonctionnement {
   font-family: $contentFont;
   counter-reset: my-sec-counter;
+  flex-wrap: wrap;
+
 
   & h2 {
-      margin-bottom: 1rem;
-      margin-left: 2rem;
+    margin-left: 11.25rem;
+    @media (max-width:767px) {
+      
+        margin-left: 2rem;
+      }
+      
+    }
 
-  }
+
+  
 
   & ol {
  
@@ -24,6 +32,7 @@ margin-right: 11.25rem;
   flex-direction: column;
   margin-right: 1.25rem;
   margin-left: 2rem;
+
   
   
 }
@@ -63,7 +72,7 @@ margin-right: 11.25rem;
           left: -1rem; /* Adjust the left position as needed */
           top: 50%;
           border-radius: 50%;
-          transform: translateY(-50%);
+          transform: translatey(-50%);
       }
       
   }

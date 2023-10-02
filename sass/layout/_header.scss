@@ -2,15 +2,18 @@
 header{
     position: relative;
     
-            .logo{
+            h1{
+                font-family: $logoFont;
+                @include flexcernter;
+                background: var(--White, #FFF);
+                color: black;   
+                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
                 padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
-    
-            flex-direction: column;
-            @include flexcernter;
-            background: var(--White, #FFF);
-            font-family: $logoFont;
-        color: black;   
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-        
+                margin: 0;
+
+                
+
+
             }
+        
         }
