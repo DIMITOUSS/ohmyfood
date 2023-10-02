@@ -376,7 +376,7 @@ footer .logo {
   width: 100%;
 }
 
-section {
+.menus {
   position: relative;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
@@ -384,49 +384,79 @@ section {
   background: #f6f6f6;
 }
 @media (min-width: 768px) {
-  section {
+  .menus {
     margin-right: 12rem;
     margin-left: 12.06rem;
     padding-bottom: 3rem;
   }
 }
-section .title {
+.menus .title {
   margin: 0;
   padding-top: 2rem;
   font-family: "Shrikhand";
 }
-section .entry {
+.menus .entry {
   display: flex;
   flex-direction: column;
   margin: 0.81rem;
   gap: 0.75rem;
 }
-section .card {
+.menus .card {
+  position: relative;
   margin: 0;
   padding: 0.94rem;
   border-radius: 0.9375rem;
   background-color: white;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  transition: 300ms ease-in-out;
 }
-section .card p, section .card h2 {
+.menus .card p, .menus .card h2 {
   margin: 0;
 }
-section .menu-title {
+.menus .euro {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  transform: translateY(-9%);
+  font-weight: bold;
+  transition: 300ms ease-in-out;
+}
+.menus .card:hover .euro {
+  transform: translateX(-4rem);
+}
+.menus .card::before {
+  content: "";
+  position: absolute;
+  right: 0rem;
+  top: 0;
+  width: 3rem;
+  height: 100%;
+  background-color: #99E2D0;
+  transition: right 0.5s;
+  border-top-right-radius: 0.9375rem;
+  border-bottom-right-radius: 0.9375rem;
+  opacity: 0;
+}
+.menus .card:hover::before {
+  opacity: 1;
+  right: 2rem;
+}
+.menus .menu-title {
   position: relative;
 }
-section .line {
+.menus .line {
   position: absolute;
   background: #99E2D0;
   top: 2.5rem;
   width: 2.5rem;
   height: 0.1875rem;
 }
-section .order {
+.menus .order {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .order button {
+.menus .order button {
   border: none;
   color: white;
   width: 11.625rem;
@@ -438,7 +468,7 @@ section .order button {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   transition: 600ms ease;
 }
-section .order:hover {
+.menus .order:hover {
   opacity: 0.7;
 }
 
