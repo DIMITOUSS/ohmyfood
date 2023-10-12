@@ -1,21 +1,18 @@
-@import 'sass/helpers/variables';
+@import "sass/helpers/variables";
 
-
-* ,::before ,::after{
-    box-sizing: border-box;
-   
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
-body,html{
-    margin: 0;
+body,
+html {
+  margin: 0;
 }
 a {
-    color: inherit;
-    text-decoration: none;
-  }
-  section{
- 
-    font-family: $contentFont;
-     
-   
-     }
-  
+  color: inherit;
+  text-decoration: none;
+}
+section {
+  font-family: $contentFont;
+}

@@ -1,32 +1,24 @@
-.headline{
-    
-    text-align: center;
-    background: var(--Background, #F6F6F6);
-    font-family: $contentFont;
-    padding-bottom: 3rem;
-    padding-top: 2rem;
+.headline {
+  text-align: center;
+  background: var(--Background, #f6f6f6);
+  font-family: $contentFont;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
 
+  button {
+    width: 13.625rem;
+    height: 3.125rem;
+    font-size: 1rem;
+    border: transparent;
+    border-radius: 1.5625rem;
+    background:linear-gradient($Button-Gradient);
+    color: #f6f6f6;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    transition: 600ms ease-in-out;
+    &:hover {
+     
    
- 
-    button{
-      width: 13.625rem;
-height: 3.125rem;
-font-size: 1rem;
-border: transparent;
-border-radius: 1.5625rem;
-background: var(--Button-Gradient, linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%));
-color: #F6F6F6;
-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-&:hover{
-  transition: 600ms ease-in-out;
-  opacity: 0.8;
-  transform: scale(1.2);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-
- }
-
-}
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+    }
   }
- 
-  
- 
+}

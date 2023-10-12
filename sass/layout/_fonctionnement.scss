@@ -3,81 +3,61 @@
   counter-reset: my-sec-counter;
   flex-wrap: wrap;
 
-
-  & h2 {
+  & h3 {
     margin-left: 11.25rem;
-    @media (max-width:767px) {
-      
-        margin-left: 2rem;
-      }
-      
+    @media (max-width: 767px) {
+      margin-left: 2rem;
     }
-
-
-  
+  }
 
   & ol {
- 
-      list-style: none;
-      padding: 0;
-display: flex; 
- gap: 2rem; 
-justify-content: center;
-margin-left: 11.25rem;
-margin-right: 11.25rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-left: 11.25rem;
+    margin-right: 11.25rem;
 
-
-@media (max-width:767px) {
-  display: flex;
-  flex-direction: column;
-  margin-right: 1.25rem;
-  margin-left: 2rem;
-
-  
-  
-}
-
-}
-
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+      margin-right: 1.25rem;
+      margin-left: 2rem;
+    }
+  }
 
   & li {
     border-radius: 1.25rem;
-      display: flex;
-      align-items: center;
-      position: relative;
-      height: 4.52369rem;
-      flex-grow: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 4.52369rem;
+    flex-grow: 1;
 
+    @include boxshadow;
 
+    & i {
+      color: black;
+      padding: 0.5rem;
+      padding-left: 1rem;
+    }
 
-
-      @include boxshadow;
-
-      & i {
-          color: black;
-          padding: 0.5rem;
-          padding-left: 1rem;
-          
-               }
-
-    
-      &::before {
-        counter-increment: my-sec-counter;
-          content: counter(my-sec-counter);
-          background-color: #9356DC;
-          color: white;
-          padding: 0.2rem 0.5rem;
-          border-radius: 4px;
-          position: absolute;
-          left: -1rem; /* Adjust the left position as needed */
-          top: 50%;
-          border-radius: 50%;
-          transform: translatey(-50%);
-      }
-      
+    &::before {
+      counter-increment: my-sec-counter;
+      content: counter(my-sec-counter);
+      background-color: #9356dc;
+      color: white;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      position: absolute;
+      left: -1rem; /* Adjust the left position as needed */
+      top: 50%;
+      border-radius: 50%;
+      transform: translatey(-50%);
+    }
   }
-  & .iconcolor{
-   color: #9356DC;
+  & .iconcolor {
+    color: #9356dc;
   }
- 
 }

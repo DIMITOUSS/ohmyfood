@@ -7,11 +7,10 @@
 @import 'sass/layout/fonctionnement';
 @import 'sass/layout/restaurent';
 @import 'sass/layout/footer';
-@import 'sass/pages/menu.scss';
+@import './sass/layout/menu';
 
 
-
-    .localisation{
+ .localisation{
         @include flexcernter;
 color: #353535;
 gap: 1.0625rem;

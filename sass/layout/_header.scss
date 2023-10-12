@@ -1,19 +1,13 @@
+header {
+  position: relative;
 
-header{
-    position: relative;
-    
-            h1{
-                font-family: $logoFont;
-                @include flexcernter;
-                background: var(--White, #FFF);
-                color: black;   
-                box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-                padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
-                margin: 0;
-
-                
-
-
-            }
-        
-        }
+  h1 {
+    font-family: $logoFont;
+    @include flexcernter;
+    background: var(--White, #fff);
+    color: black;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 0.875rem 5.5625rem 0.8125rem 5.5625rem;
+    margin: 0;
+  }
+}

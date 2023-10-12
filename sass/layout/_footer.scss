@@ -1,31 +1,44 @@
-@import 'sass/helpers/variables';
-
-
-    
+@import "sass/helpers/variables";
 
 footer{
-    font-family: $contentFont;
-   background: var(--Grey, #353535);
+  font-family: $contentFont;
+ p{
+  margin: 0;
+ }
+   
+  background-color: #353535; 
+  color: white;
+  display: flex;
 padding: 1.375rem 1.5625rem;
-@media (min-width:768px) {
-    display: flex;
-
-  //  flex-direction: column;
+flex-direction: column;
 align-items: flex-start;
-justify-content: flex-start;
-
-}
-flex-direction: row-reverse;
-justify-content: flex-start;
-
 gap: 1rem;
-color: white;
+
+
+@media (min-width:768px) {
+flex-direction: row;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
+&{
+    :nth-child(1) { order: 5; }
+    .logo{
+       padding-left: 2rem;
+    }
+
+}
+
+}
+
 i{
-    padding-right: 1rem;
+   padding-right: 1rem;
+}
+& .logo {
+  font-family: $logoFont;
+}
 }
 
-& .logo{
-font-family:$logoFont;
 
-}
-}
+ 
+
