@@ -28,15 +28,15 @@ margin-top: -4rem;
     padding-bottom: 3rem;
   }
   .title{
-    position: relative;
       font-family: $logoFont;
      @include flexcernter;
      gap: 3rem;
+     @media (max-width: 768px){
+      justify-content: flex-start;
+     }
      h2{
       margin-bottom: 0;
      }
-  
-
      i{
       font-size:x-large;
      }
@@ -63,76 +63,82 @@ margin-top: -4rem;
     
       }
     }
-  .entry {
+    .container{
+      .entry {
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 768px){
+         
+        }
+       
+        gap: 0.75rem;
+        .menu-title {
+          margin: 0;
+          padding-top: 2rem;
+      
+          .line {
+            position: absolute;
+            background: #99e2d0;
+           transform: translateY(-1rem);
+            width: 2.5rem;
+            height: 0.1875rem;
+          }
+        }
+        
+        .card {
+          overflow:  hidden;
+          display: flex;
+           margin: 0;
+         padding-left: 1rem;
+         padding-top :1rem;
+           border-radius: 0.9375rem;
+           background-color: white;
+           filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+           transition: 300ms;
+           @media (min-width: 768px){
+            margin-left: 6rem;
+            margin-right: 6rem;
+           }
+           p, h3 {
+           margin: 0;
+         }
+         .euro{
+          margin-right:1rem ;
+          margin-left: auto;
+    font-weight: 900;
     display: flex;
-    flex-direction: column;
-    @media (min-width: 768px){
-      margin-left: 11rem;
-    margin-right: 11rem;
-    }
-   
-    gap: 0.75rem;
-    .menu-title {
-      margin: 0;
-      padding-top: 2rem;
-  
-      .line {
-        position: absolute;
-        background: #99e2d0;
-        top: 8rem;
-        width: 2.5rem;
-        height: 0.1875rem;
-      }
-    }
+    align-items: flex-end;
+         }
+         
+         
+         .menu-item-check{
+          background: $green;
+       
+          margin: -1rem -5rem -1rem 1rem;
+          width: 4rem;
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          transition-duration: 0.5s;
+          border-top-right-radius: 0.9375rem;
+          border-bottom-right-radius: 0.9375rem;
+       }
+         &:hover .menu-item-check {
+          margin-right: -1rem;
     
-    .card {
-      overflow: hidden;
-      display: flex;
-       margin: 0;
-     padding-left: 1rem;
-     padding-top :1rem;
-       border-radius: 0.9375rem;
-       background-color: white;
-       filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-       transition: 300ms;
-       p, h3 {
-       margin: 0;
-     }
-     .euro{
-      margin-right:1rem ;
-      margin-left: auto;
-font-weight: 900;
-display: flex;
-align-items: flex-end;
-     }
-     
-     
-     .menu-item-check{
-      background: $green;
-   
-      margin: -1rem -5rem -1rem 1rem;
-      width: 4rem;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      transition-duration: 0.5s;
-      border-top-right-radius: 0.9375rem;
-      border-bottom-right-radius: 0.9375rem;
-   }
-     &:hover .menu-item-check {
-      margin-right: -1rem;
-
+        }
+        .fa-check{
+     @include flexcernter;
+        width: 1rem;
+        height: 1rem;
+        color: #99E2D0;
+        background: #f6f6f6;
+        border-radius: 50%;
     }
-    .fa-check{
- @include flexcernter;
-    width: 1rem;
-    height: 1rem;
-    color: #99E2D0;
-    background: #f6f6f6;
-    border-radius: 50%;
-}
+        }
+         }
     }
-     }
+  
     
   }
  
