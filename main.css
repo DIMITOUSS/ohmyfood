@@ -453,7 +453,6 @@ footer .logo {
 .menus .container .entry .card {
   overflow: hidden;
   display: flex;
-  margin: 0;
   padding-left: 1rem;
   padding-top: 1rem;
   border-radius: 0.9375rem;
