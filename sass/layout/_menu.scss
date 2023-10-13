@@ -35,34 +35,37 @@ margin-top: -4rem;
      @media (max-width: 768px){
       justify-content: flex-start;
      }
+     input[type="checkbox"] {
+      display: none;
+  }
+   
+  input[type="checkbox"] + label:before {
+    font-family: "Font Awesome 5 Free"; font-weight: 400;   content: "\f004";
+      
+      font-size:x-large;
+
+      position: absolute;
+    transition:  .5s ease;
+  
+  }
+   
+  
+  input[type="checkbox"]:checked + label:after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900;   content: "\f004";
+      font-size:x-large;
+      position: absolute;
+    transition:  .5s ease;
+color: $primary;
+  }
+  
+ 
+
+
      h2{
       margin-bottom: 0;
      }
-     i{
-      font-size:x-large;
-     }
-      .fa-regular{
-    
-       
-        position: absolute;
-      }
-      .fa-solid{
 
-        position: absolute;
-        pointer-events: none;
-    display: inline-block;   
-     background-clip: text;
-    -webkit-background-clip: text
-    ;
-    color: transparent;
-
-      }
-       &:active .fa-solid  {
-        cursor: pointer;
-       background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%)
     
-    
-      }
     }
     .container{
       
