@@ -204,6 +204,7 @@ header .header__arrow {
   background-image: url(../../images/restaurants/menu-4.jpg);
 }
 .card-content {
+  position: relative;
   padding: 1rem;
   font-family: "Roboto";
 }
@@ -212,25 +213,33 @@ header .header__arrow {
   margin: 0;
   position: relative;
 }
-.card-content i {
-  font-size: 1.5rem;
-  flex-shrink: 0;
+.card-content .heart, .card-content .heart1, .card-content .heart2, .card-content .heart3 {
   position: absolute;
-  right: 1rem;
-  bottom: 7%;
-  transform: translateY(-50%);
-  pointer-events: none;
+  right: 3rem;
+  bottom: 3rem;
 }
-.card-content .fa-solid {
-  pointer-events: none;
-  display: inline-block;
+.card-content .heart input, .card-content .heart1 input, .card-content .heart2 input, .card-content .heart3 input {
+  display: none;
+}
+.card-content .heart input + label:before, .card-content .heart1 input + label:before, .card-content .heart2 input + label:before, .card-content .heart3 input + label:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: x-large;
+  position: absolute;
+  transition: .5s ease;
+}
+.card-content .heart input:checked + label:after, .card-content .heart1 input:checked + label:after, .card-content .heart2 input:checked + label:after, .card-content .heart3 input:checked + label:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  font-size: x-large;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-}
-.card-content:hover .fa-solid {
-  cursor: pointer;
-  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  position: absolute;
+  transition: .5s ease;
+  background-image: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
 }
 
 footer {
@@ -344,6 +353,7 @@ footer .logo {
   background-image: url(../../images/restaurants/menu-4.jpg);
 }
 .card-content {
+  position: relative;
   padding: 1rem;
   font-family: "Roboto";
 }
@@ -352,25 +362,33 @@ footer .logo {
   margin: 0;
   position: relative;
 }
-.card-content i {
-  font-size: 1.5rem;
-  flex-shrink: 0;
+.card-content .heart, .card-content .heart1, .card-content .heart2, .card-content .heart3 {
   position: absolute;
-  right: 1rem;
-  bottom: 7%;
-  transform: translateY(-50%);
-  pointer-events: none;
+  right: 3rem;
+  bottom: 3rem;
 }
-.card-content .fa-solid {
-  pointer-events: none;
-  display: inline-block;
+.card-content .heart input, .card-content .heart1 input, .card-content .heart2 input, .card-content .heart3 input {
+  display: none;
+}
+.card-content .heart input + label:before, .card-content .heart1 input + label:before, .card-content .heart2 input + label:before, .card-content .heart3 input + label:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: x-large;
+  position: absolute;
+  transition: .5s ease;
+}
+.card-content .heart input:checked + label:after, .card-content .heart1 input:checked + label:after, .card-content .heart2 input:checked + label:after, .card-content .heart3 input:checked + label:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  font-size: x-large;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-}
-.card-content:hover .fa-solid {
-  cursor: pointer;
-  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  position: absolute;
+  transition: .5s ease;
+  background-image: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
 }
 
 .menu-cover {
@@ -391,14 +409,14 @@ footer .logo {
   position: relative;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
+  padding-bottom: 3rem;
   margin-top: -4rem;
   background: #f6f6f6;
 }
-@media (min-width: 768px) {
+@media (min-width: 1444px) {
   .menus {
-    margin-right: 12rem;
-    margin-left: 12.06rem;
-    padding-bottom: 3rem;
+    margin-left: 13rem;
+    margin-right: 13rem;
   }
 }
 .menus .title {
@@ -413,35 +431,53 @@ footer .logo {
     justify-content: flex-start;
   }
 }
-.menus .title h2 {
-  margin-bottom: 0;
+.menus .title .heart input {
+  display: none;
 }
-.menus .title i {
+.menus .title .heart input + label:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
   font-size: x-large;
-}
-.menus .title .fa-regular {
   position: absolute;
+  transition: .5s ease;
 }
-.menus .title .fa-solid {
-  position: absolute;
-  pointer-events: none;
-  display: inline-block;
+.menus .title .heart input:checked + label:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  font-size: x-large;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  position: absolute;
+  transition: .5s ease;
+  background-image: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
 }
-.menus .title:active .fa-solid {
-  cursor: pointer;
-  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+.menus .title h2 {
+  margin-bottom: 0;
 }
 .menus .container .entry {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
   gap: 0.75rem;
 }
 .menus .container .entry .menu-title {
   margin: 0;
   padding-top: 2rem;
+}
+@media (min-width: 1444px) {
+  .menus .container .entry .menu-title {
+    margin-left: 13rem;
+    margin-right: 13rem;
+  }
+}
+@media (min-width: 767px) {
+  .menus .container .entry .menu-title {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
 }
 .menus .container .entry .menu-title .line {
   position: absolute;
@@ -453,36 +489,42 @@ footer .logo {
 .menus .container .entry .card {
   overflow: hidden;
   display: flex;
-  padding-left: 1rem;
-  padding-top: 1rem;
+  padding: 1rem;
   border-radius: 0.9375rem;
   background-color: white;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   transition: 300ms;
 }
+.menus .container .entry .card-item {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 @media (min-width: 768px) {
   .menus .container .entry .card {
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
   }
 }
 .menus .container .entry .card p, .menus .container .entry .card h3 {
   margin: 0;
 }
 .menus .container .entry .card .euro {
-  margin-right: 1rem;
   margin-left: auto;
-  font-weight: 900;
+  font-weight: 700;
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
+  padding-right: 0.5rem;
 }
 .menus .container .entry .card .menu-item-check {
   background: #99E2D0;
   margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   transition-duration: 0.5s;
   border-top-right-radius: 0.9375rem;
   border-bottom-right-radius: 0.9375rem;
