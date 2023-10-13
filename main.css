@@ -204,6 +204,7 @@ header .header__arrow {
   background-image: url(../../images/restaurants/menu-4.jpg);
 }
 .card-content {
+  position: relative;
   padding: 1rem;
   font-family: "Roboto";
 }
@@ -212,25 +213,33 @@ header .header__arrow {
   margin: 0;
   position: relative;
 }
-.card-content i {
-  font-size: 1.5rem;
-  flex-shrink: 0;
+.card-content .heart, .card-content .heart1, .card-content .heart2, .card-content .heart3 {
   position: absolute;
-  right: 1rem;
-  bottom: 7%;
-  transform: translateY(-50%);
-  pointer-events: none;
+  right: 3rem;
+  bottom: 3rem;
 }
-.card-content .fa-solid {
-  pointer-events: none;
-  display: inline-block;
+.card-content .heart input, .card-content .heart1 input, .card-content .heart2 input, .card-content .heart3 input {
+  display: none;
+}
+.card-content .heart input + label:before, .card-content .heart1 input + label:before, .card-content .heart2 input + label:before, .card-content .heart3 input + label:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: x-large;
+  position: absolute;
+  transition: .5s ease;
+}
+.card-content .heart input:checked + label:after, .card-content .heart1 input:checked + label:after, .card-content .heart2 input:checked + label:after, .card-content .heart3 input:checked + label:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  font-size: x-large;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-}
-.card-content:hover .fa-solid {
-  cursor: pointer;
-  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  position: absolute;
+  transition: .5s ease;
+  background-image: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
 }
 
 footer {
@@ -344,6 +353,7 @@ footer .logo {
   background-image: url(../../images/restaurants/menu-4.jpg);
 }
 .card-content {
+  position: relative;
   padding: 1rem;
   font-family: "Roboto";
 }
@@ -352,25 +362,33 @@ footer .logo {
   margin: 0;
   position: relative;
 }
-.card-content i {
-  font-size: 1.5rem;
-  flex-shrink: 0;
+.card-content .heart, .card-content .heart1, .card-content .heart2, .card-content .heart3 {
   position: absolute;
-  right: 1rem;
-  bottom: 7%;
-  transform: translateY(-50%);
-  pointer-events: none;
+  right: 3rem;
+  bottom: 3rem;
 }
-.card-content .fa-solid {
-  pointer-events: none;
-  display: inline-block;
+.card-content .heart input, .card-content .heart1 input, .card-content .heart2 input, .card-content .heart3 input {
+  display: none;
+}
+.card-content .heart input + label:before, .card-content .heart1 input + label:before, .card-content .heart2 input + label:before, .card-content .heart3 input + label:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: x-large;
+  position: absolute;
+  transition: .5s ease;
+}
+.card-content .heart input:checked + label:after, .card-content .heart1 input:checked + label:after, .card-content .heart2 input:checked + label:after, .card-content .heart3 input:checked + label:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  font-size: x-large;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-}
-.card-content:hover .fa-solid {
-  cursor: pointer;
-  background-image: linear-gradient(193deg, #9356dc -11.44%, #ff79da 123.93%);
+  position: absolute;
+  transition: .5s ease;
+  background-image: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
 }
 
 .menu-cover {
@@ -413,10 +431,10 @@ footer .logo {
     justify-content: flex-start;
   }
 }
-.menus .title input[type="checkbox"] {
+.menus .title .heart input {
   display: none;
 }
-.menus .title input[type="checkbox"] + label:before {
+.menus .title .heart input + label:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   content: "\f004";
@@ -424,14 +442,17 @@ footer .logo {
   position: absolute;
   transition: .5s ease;
 }
-.menus .title input[type="checkbox"]:checked + label:after {
+.menus .title .heart input:checked + label:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f004";
   font-size: x-large;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   position: absolute;
   transition: .5s ease;
-  color: #9356DC;
+  background-image: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
 }
 .menus .title h2 {
   margin-bottom: 0;

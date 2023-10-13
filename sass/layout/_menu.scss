@@ -35,28 +35,36 @@ margin-top: -4rem;
      @media (max-width: 768px){
       justify-content: flex-start;
      }
-     input[type="checkbox"] {
-      display: none;
-  }
+     .heart{
    
-  input[type="checkbox"] + label:before {
-    font-family: "Font Awesome 5 Free"; font-weight: 400;   content: "\f004";
-      
-      font-size:x-large;
+      input {
+  
+        display: none;
+        &+ label:before {
+          font-family: "Font Awesome 5 Free"; font-weight: 400;   content: "\f004";
+            font-size:x-large;
+            position: absolute;
+          transition:  .5s ease;
+       
 
-      position: absolute;
-    transition:  .5s ease;
+        
+        }
+       &:checked + label:after {
+          font-family: "Font Awesome 5 Free"; font-weight: 900;   content: "\f004";
+            font-size:x-large;
+            background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+            position: absolute;
+          transition:  .5s ease;
+background-image:linear-gradient($Button-Gradient);        }
+    }
+     
+     
+    
+    
+    }
   
-  }
-   
-  
-  input[type="checkbox"]:checked + label:after {
-    font-family: "Font Awesome 5 Free"; font-weight: 900;   content: "\f004";
-      font-size:x-large;
-      position: absolute;
-    transition:  .5s ease;
-color: $primary;
-  }
   
 
      h2{
