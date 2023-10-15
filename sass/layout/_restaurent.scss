@@ -52,26 +52,19 @@
       font-family: $contentFont;
     }
     
-    &__image {
-height: 15rem;
-      background-size: cover;
-      width: 100%;
-      border-top-right-radius: 0.9375rem;
-      border-top-left-radius: 0.9375rem;
-    }
+    &__image{
+      img{
+        height: 15rem;
+              background-size: cover;
+              width: 100%;
+              border-top-right-radius: 0.9375rem;
+              border-top-left-radius: 0.9375rem;
+            }
 
-    &__image-1 {
-      background-image: url(../../images/restaurants/menu-1.jpg);
     }
-    &__image-2 {
-      background-image: url(../../images/restaurants/menu-2.jpg);
-    }
-    &__image-3 {
-      background-image: url(../../images/restaurants/menu-3.jpg);
-    }
-    &__image-4 {
-      background-image: url(../../images/restaurants/menu-4.jpg);
-    }
+   
+
+   
     &-content {
       position: relative;
       padding: 1rem;

@@ -184,24 +184,12 @@ header .header__arrow {
 .card-title {
   font-family: "Roboto";
 }
-.card__image {
+.card__image img {
   height: 15rem;
   background-size: cover;
   width: 100%;
   border-top-right-radius: 0.9375rem;
   border-top-left-radius: 0.9375rem;
-}
-.card__image-1 {
-  background-image: url(../../images/restaurants/menu-1.jpg);
-}
-.card__image-2 {
-  background-image: url(../../images/restaurants/menu-2.jpg);
-}
-.card__image-3 {
-  background-image: url(../../images/restaurants/menu-3.jpg);
-}
-.card__image-4 {
-  background-image: url(../../images/restaurants/menu-4.jpg);
 }
 .card-content {
   position: relative;
@@ -333,24 +321,12 @@ footer .logo {
 .card-title {
   font-family: "Roboto";
 }
-.card__image {
+.card__image img {
   height: 15rem;
   background-size: cover;
   width: 100%;
   border-top-right-radius: 0.9375rem;
   border-top-left-radius: 0.9375rem;
-}
-.card__image-1 {
-  background-image: url(../../images/restaurants/menu-1.jpg);
-}
-.card__image-2 {
-  background-image: url(../../images/restaurants/menu-2.jpg);
-}
-.card__image-3 {
-  background-image: url(../../images/restaurants/menu-3.jpg);
-}
-.card__image-4 {
-  background-image: url(../../images/restaurants/menu-4.jpg);
 }
 .card-content {
   position: relative;
@@ -520,7 +496,6 @@ footer .logo {
 }
 .menus .container .entry .card .menu-item-check {
   background: #99E2D0;
-  margin: -1rem -5rem -1rem 1rem;
   width: 4rem;
   display: flex;
   justify-content: center;
@@ -528,6 +503,31 @@ footer .logo {
   transition-duration: 0.5s;
   border-top-right-radius: 0.9375rem;
   border-bottom-right-radius: 0.9375rem;
+  margin: -1rem -5rem -1rem 1rem;
+}
+.menus .container .entry .card .menu-item-checkinput {
+  margin: -1rem -5rem -1rem 1rem;
+  display: none;
+}
+.menus .container .entry .card .menu-item-checkinput + label:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: x-large;
+  position: absolute;
+  transition: .5s ease;
+}
+.menus .container .entry .card .menu-item-checkinput:checked + label:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f004";
+  font-size: x-large;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: absolute;
+  transition: .5s ease;
+  background-image: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
 }
 .menus .container .entry .card:hover .menu-item-check {
   margin-right: -1rem;
