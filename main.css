@@ -478,6 +478,12 @@ footer .logo {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.menus .container .entry .card p {
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 @media (min-width: 768px) {
   .menus .container .entry .card {
     margin-left: 12rem;
