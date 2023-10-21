@@ -3,27 +3,30 @@
   counter-reset: my-sec-counter;
   flex-wrap: wrap;
 
-  & h3 {
-    margin-left: 11.25rem;
-    @media (max-width: 767px) {
-      margin-left: 2rem;
-    }
-  }
 
-  & ol {
+
+ 
+    @media (min-width: 767px) {
+      padding: 3.125rem 11.25rem;
+
+    }
+  
+
+  & ol  {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin-left: 11.25rem;
-    margin-right: 11.25rem;
+    gap: 1.5625rem;
 
-    @media (max-width: 767px) {
+    justify-content: center;
+    
+
+    @media (max-width: 767px)  {
       display: flex;
       flex-direction: column;
       margin-right: 1.25rem;
       margin-left: 2rem;
+
     }
   }
 
@@ -59,5 +62,13 @@
   }
   & .iconcolor {
     color: #9356dc;
+  }
+  .title{
+    @media (max-width: 767px)  {
+  
+      margin-right: 1.25rem;
+      margin-left: 2rem;
+
+    }
   }
 }

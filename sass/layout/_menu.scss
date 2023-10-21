@@ -118,7 +118,9 @@ background-image:linear-gradient($Button-Gradient);        }
     text-overflow: ellipsis;
     overflow: hidden;
 
+
            }
+           
            @media (min-width: 768px){
             margin-left: 12rem;
             margin-right: 12rem;
@@ -135,56 +137,34 @@ background-image:linear-gradient($Button-Gradient);        }
           padding-right: 0.5rem;
       
          }
-         
-         
-         .menu-item-check{
+         .menu-item-check {
           background: $green;
           width: 4rem;
-           @include flexcernter;
+          @include flexcernter;
           transition-duration: 0.5s;
           border-top-right-radius: 0.9375rem;
           border-bottom-right-radius: 0.9375rem;
           margin: -1rem -5rem -1rem 1rem;
-
-
-          &input {
-            margin: -1rem -5rem -1rem 1rem;
-
-            display: none;
-            &+ label:before {
-              font-family: "Font Awesome 5 Free"; font-weight: 400;   content: "\f004";
-                font-size:x-large;
-                position: absolute;
-              transition:  .5s ease;
-           
-    
-            
-            }
-           &:checked + label:after {
-              font-family: "Font Awesome 5 Free"; font-weight: 900;   content: "\f004";
-                font-size:x-large;
-                background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-                position: absolute;
-              transition:  .5s ease;
-    background-image:linear-gradient($Button-Gradient);        }
-        }
-          
-       }
-
-         &:hover .menu-item-check {
-          margin-right: -1rem;
-    
-        }
-        .fa-check{
-     @include flexcernter;
-        width: 1rem;
-        height: 1rem;
-        color: #99E2D0;
-        background: #f6f6f6;
-        border-radius: 50%;
+          position: relative;
+        
+      
+      }
+   &:hover .menu-item-check {
+        margin-right: -1rem;
     }
+  
+  
+  
+      
+      .fa-check {
+          @include flexcernter;
+          width: 1rem;
+          height: 1rem;
+          color: #99E2D0;
+          background: #f6f6f6;
+          border-radius: 50%;
+      }
+      
         }
          }
     }
