@@ -117,17 +117,17 @@ background-image:linear-gradient($Button-Gradient);        }
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-
+    p{
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+  
+      
+     }
 
            }
-           p{
-            margin: 0;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        
-            
-           }
+          
            
            @media (min-width: 768px){
             margin-left: 12rem;

@@ -478,7 +478,7 @@ footer .logo {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.menus .container .entry .card p {
+.menus .container .entry .card-item p {
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
