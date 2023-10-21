@@ -83,8 +83,9 @@
       input {
   
         display: none;
+     
         &+ label:before {
-          font-family: "Font Awesome 5 Free"; font-weight: 400;   content: "\f004";
+          font-family: "Font Awesome 5 Free"; font-weight: 400;   content: "\f08a";
             font-size:x-large;
             position: absolute;
           transition:  .5s ease;

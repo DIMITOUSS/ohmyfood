@@ -70,22 +70,17 @@ header .header__arrow {
   counter-reset: my-sec-counter;
   flex-wrap: wrap;
 }
-.fonctionnement h3 {
-  margin-left: 11.25rem;
-}
-@media (max-width: 767px) {
-  .fonctionnement h3 {
-    margin-left: 2rem;
+@media (min-width: 767px) {
+  .fonctionnement {
+    padding: 3.125rem 11.25rem;
   }
 }
 .fonctionnement ol {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 2rem;
+  gap: 1.5625rem;
   justify-content: center;
-  margin-left: 11.25rem;
-  margin-right: 11.25rem;
 }
 @media (max-width: 767px) {
   .fonctionnement ol {
@@ -125,6 +120,12 @@ header .header__arrow {
 }
 .fonctionnement .iconcolor {
   color: #9356dc;
+}
+@media (max-width: 767px) {
+  .fonctionnement .title {
+    margin-right: 1.25rem;
+    margin-left: 2rem;
+  }
 }
 
 .section-title {
@@ -212,7 +213,7 @@ header .header__arrow {
 .card-content .heart input + label:before, .card-content .heart1 input + label:before, .card-content .heart2 input + label:before, .card-content .heart3 input + label:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
-  content: "\f004";
+  content: "\f08a";
   font-size: x-large;
   position: absolute;
   transition: .5s ease;
@@ -349,7 +350,7 @@ footer .logo {
 .card-content .heart input + label:before, .card-content .heart1 input + label:before, .card-content .heart2 input + label:before, .card-content .heart3 input + label:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
-  content: "\f004";
+  content: "\f08a";
   font-size: x-large;
   position: absolute;
   transition: .5s ease;
@@ -504,30 +505,7 @@ footer .logo {
   border-top-right-radius: 0.9375rem;
   border-bottom-right-radius: 0.9375rem;
   margin: -1rem -5rem -1rem 1rem;
-}
-.menus .container .entry .card .menu-item-checkinput {
-  margin: -1rem -5rem -1rem 1rem;
-  display: none;
-}
-.menus .container .entry .card .menu-item-checkinput + label:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-  content: "\f004";
-  font-size: x-large;
-  position: absolute;
-  transition: .5s ease;
-}
-.menus .container .entry .card .menu-item-checkinput:checked + label:after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f004";
-  font-size: x-large;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  position: absolute;
-  transition: .5s ease;
-  background-image: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
+  position: relative;
 }
 .menus .container .entry .card:hover .menu-item-check {
   margin-right: -1rem;
