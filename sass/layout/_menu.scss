@@ -17,8 +17,8 @@
 }
 .menus {
   position: relative;
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
+  border-top-right-radius: 2.5rem;
+  border-top-left-radius: 2.5rem;
 
   padding-bottom: 3rem;
 margin-top: -4rem;
@@ -32,9 +32,7 @@ margin-top: -4rem;
       font-family: $logoFont;
      @include flexcernter;
      gap: 3rem;
-     @media (max-width: 768px){
-      justify-content: flex-start;
-     }
+  
      .heart{
    
       input {
@@ -45,9 +43,7 @@ margin-top: -4rem;
             font-size:x-large;
             position: absolute;
           transition:  .5s ease;
-       
-
-        
+      
         }
        &:checked + label:after {
           font-family: "Font Awesome 5 Free"; font-weight: 900;   content: "\f004";
