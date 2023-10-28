@@ -35,6 +35,7 @@ h4 {
   100% {
     transform: rotate(360deg);
     opacity: 0;
+    transform: scale3d(-1.4, 0.4, 0.7);
   }
 }
 @keyframes content-appear {
@@ -56,12 +57,14 @@ h4 {
 }
 .loader::after {
   content: 'Ohmyfood';
+  border-radius: 10%;
   font-family: "Shrikhand";
   position: absolute;
+  font-size: xx-large;
   opacity: 0.8;
-  text-transform: full-size-kana;
   animation: spin 2.5s linear 600ms;
-  background: -webkit-linear-gradient(#9356DC, #003A68);
+  background: -webkit-linear-gradient(#9356DC 100%, #003A68 10%, #ff79da 122%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
