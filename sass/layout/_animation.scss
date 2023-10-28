@@ -1,0 +1,50 @@
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+		opacity: 1;
+	}
+	75% {
+		transform: rotate(360deg);
+		opacity: .8;
+	}
+	100% {
+		transform: rotate(360deg);
+		opacity: 0;
+	}
+}
+@keyframes content-appear {
+	to {
+		transform: scale(0);
+	}
+	
+}
+
+
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100wh;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+  display: grid;
+ place-items: center;
+  animation: content-appear 20ms  3s forwards;
+  transform-origin: top;
+
+
+
+    &::after {
+        content: 'Ohmyfood';
+        font-family: $logoFont;
+        position: absolute;
+        opacity: 0.8;
+        text-transform: full-size-kana;
+        animation: spin 2.5s linear 600ms;
+        background: -webkit-linear-gradient($primary, $bluesecond );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+   
+}

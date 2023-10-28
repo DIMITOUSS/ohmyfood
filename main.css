@@ -23,6 +23,49 @@ h4 {
   margin: 0;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  75% {
+    transform: rotate(360deg);
+    opacity: .8;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes content-appear {
+  to {
+    transform: scale(0);
+  }
+}
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100wh;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  animation: content-appear 20ms  3s forwards;
+  transform-origin: top;
+}
+.loader::after {
+  content: 'Ohmyfood';
+  font-family: "Shrikhand";
+  position: absolute;
+  opacity: 0.8;
+  text-transform: full-size-kana;
+  animation: spin 2.5s linear 600ms;
+  background: -webkit-linear-gradient(#9356DC, #003A68);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 header {
   position: relative;
 }
@@ -384,8 +427,8 @@ footer .logo {
 
 .menus {
   position: relative;
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
+  border-top-right-radius: 2.5rem;
+  border-top-left-radius: 2.5rem;
   padding-bottom: 3rem;
   margin-top: -4rem;
   background: #f6f6f6;
@@ -402,11 +445,6 @@ footer .logo {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-}
-@media (max-width: 768px) {
-  .menus .title {
-    justify-content: flex-start;
-  }
 }
 .menus .title .heart input {
   display: none;

@@ -2,12 +2,15 @@
 @import 'sass/layout/global';
 @import 'sass/helpers/variables';
 @import 'sass/helpers/mixin';
+@import './sass/layout/_animation';
+
 @import 'sass/layout/header';
 @import 'sass/layout/headline';
 @import 'sass/layout/fonctionnement';
 @import 'sass/layout/restaurent';
 @import 'sass/layout/footer';
 @import './sass/layout/menu';
+
 
 
  .localisation{
