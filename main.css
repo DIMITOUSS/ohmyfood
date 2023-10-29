@@ -23,21 +23,6 @@ h4 {
   margin: 0;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity: 1;
-  }
-  75% {
-    transform: rotate(360deg);
-    opacity: .8;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity: 0;
-    transform: scale3d(-1.4, 0.4, 0.7);
-  }
-}
 @keyframes content-appear {
   to {
     transform: scale(0);
@@ -57,18 +42,27 @@ h4 {
 }
 .loader::after {
   content: 'Ohmyfood';
-  border-radius: 10%;
   font-family: "Shrikhand";
-  position: absolute;
-  font-size: xx-large;
-  opacity: 0.8;
-  animation: spin 2.5s linear 600ms;
-  background: -webkit-linear-gradient(#9356DC 100%, #003A68 10%, #ff79da 122%);
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #9356DC 0%, #89C8FA 29%, #ff79da 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
   background-clip: text;
+  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+  font-size: 2rem;
 }
 
+@keyframes textclip {
+  to {
+    background-position: -300% center;
+  }
+}
 header {
   position: relative;
 }
