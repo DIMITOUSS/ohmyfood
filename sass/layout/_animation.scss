@@ -6,6 +6,10 @@
 	}
 	
 }
+@keyframes appear {
+0%{transform: translateX(-100%);}
+to{ transform: translateX(1%) }
+}
 
 .loader {
   position: fixed;
