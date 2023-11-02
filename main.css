@@ -611,14 +611,4 @@ footer .logo {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-.localisation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #353535;
-  gap: 1.0625rem;
-  background: var(--Grey-2, #EAEAEA);
-  font-family: "Roboto";
-}
-
 /*# sourceMappingURL=main.css.map */
