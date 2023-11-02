@@ -524,7 +524,7 @@ footer .logo {
   background-color: white;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   transition: 300ms;
-  animation: appear 1s both ease;
+  animation: appear 1s both;
 }
 .menus .container .entry .card:nth-child(1) {
   animation-delay: 100ms;
