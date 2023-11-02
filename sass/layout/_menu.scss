@@ -106,7 +106,7 @@ background-image:linear-gradient($Button-Gradient);
            background-color: white;
            filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
            transition: 300ms;
-           animation: appear 1s both ease;
+           animation: appear 1s both;
            
            @for $i from 1 through 3 {
             &:nth-child(#{$i}) {
