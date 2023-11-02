@@ -34,9 +34,7 @@ margin-top: -4rem;
      gap: 3rem;
   
      .heart{
-   
       input {
-  
         display: none;
         &+ label:before {
           font-family: "Font Awesome 5 Free"; font-weight: 400;   content: "\f004";
@@ -53,7 +51,8 @@ margin-top: -4rem;
 color: transparent;
             position: absolute;
           transition:  .5s ease;
-background-image:linear-gradient($Button-Gradient);        }
+background-image:linear-gradient($Button-Gradient); 
+}
     }
      
      
@@ -107,6 +106,14 @@ background-image:linear-gradient($Button-Gradient);        }
            background-color: white;
            filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
            transition: 300ms;
+           animation: appear 1s both ease;
+           
+           @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+             animation-delay: $i *100ms;
+            }
+          }
+        
       
            &-item {
             

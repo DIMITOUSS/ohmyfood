@@ -22,3 +22,13 @@
     }
   }
 }
+.localisation{
+  @include flexcernter;
+color: #353535;
+gap: 1.0625rem;
+background: var(--Grey-2, #EAEAEA);
+font-family: $contentFont;
+
+
+}
+
