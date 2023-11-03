@@ -1,168 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <script src="https://kit.fontawesome.com/adc6afbc4a.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <script
+      src="https://kit.fontawesome.com/adc6afbc4a.js"
+      crossorigin="anonymous"
+    ></script>
     <title>ohmyfood</title>
-</head>
-<body>
-    <div class="loader">
-      
-    </div>
+  </head>
+  <body>
+    <div class="loader"></div>
 
-        <header>
-            <div class="logo">
-                <h1>ohmyfood</h1>
-            </div>
-        </header>
+    <header>
+      <div class="logo">
+        <h1>ohmyfood</h1>
+      </div>
+    </header>
 
-   
     <main>
+      <div class="localisation">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>Paris,Belleville</p>
+      </div>
 
-        <div class="localisation">
-            <i class="fa-solid fa-location-dot"></i>
-            <p> Paris,Belleville</p> 
+      <section class="headline">
+        <h2>Réservez le menu qui vous convient</h2>
+        <p>
+          Découvrez des restaurants d’exception, sélectionnés par nos soins.
+        </p>
+        <a href="#shop"> <button>Explorer nos restaurants</button></a>
+      </section>
+
+      <section class="fonctionnement">
+        <h2 class="title">Fonctionnement</h2>
+        <ol>
+          <li>
+            <i class="fa-solid fa-mobile"></i>
+            <h4>Choisissez un restaurant</h4>
+          </li>
+          <li>
+            <i class="fa-solid fa-list"></i>
+            <h4>Composez votre menu</h4>
+          </li>
+          <li>
+            <span><i class="fa-solid fa-store iconcolor"></i></span>
+            <h4>Dégustez au restaurant</h4>
+          </li>
+        </ol>
+      </section>
+
+      <section class="restaurent" id="shop">
+        <div class="section-title">
+          <h2>Restaurants</h2>
         </div>
 
-        <section class="headline">
-            <h2>Réservez le menu qui
-                vous convient</h2>
-            <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-            <a href="#shop"> <button >Explorer nos restaurants</button></a>
-            
-        </section>
+        <div class="restaurent_card">
+          <a href="La-palette-du-goût.html">
+            <article class="card new">
+              <div class="card__image">
+                <img src="images/restaurants/menu-1.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h3>La palette du goût</h3>
+                <p>Ménilmontant</p>
 
-        <section class="fonctionnement">
-        
-            <h2 class="title"> Fonctionnement</h2>
-            <ol>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <H4>Choisissez un restaurant</H4>
-                </li>
-                <li>
-                    <i class="fa-solid fa-list"></i>
-                   <h4>Composez votre menu</h4> 
-                </li>
-                <li>
-                    <span ><i class="fa-solid fa-store iconcolor"></i></span>
-                 <h4>Dégustez au restaurant</h4>   
-                </li>
-            </ol>
-        </section>
-      
+                <div class="heart">
+                  <input type="checkbox" id="heart" />
+                  <label for="heart"> </label>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="Lanote-enchanté.html">
+            <article class="card new">
+              <div class="card__image">
+                <img src="images/restaurants/menu-2.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <h3>La note enchantée</h3>
+                <p>Charonne</p>
+                <div class="heart1">
+                  <input type="checkbox" id="heart1" />
+                  <label for="heart1"> </label>
+                </div>
+              </div>
+            </article>
+          </a>
 
-        <section class="restaurent"  id="shop">
-            <div class="section-title">
-                <h2>Restaurants</h2> 
-            </div>
-                
-                  <div class="restaurent_card">
-                    
-                <a  href="La-palette-du-goût.html">
+          <a href="./a-la-française.html">
+            <article class="card">
+              <div class="card__image">
+                <img src="images/restaurants/menu-3.jpg" alt="" />
+              </div>
 
-                    <article class="card new">
-                    <div class="card__image ">
-                        <img src="images/restaurants/menu-1.jpg" alt="">
-                    </div>
-                            <div class="card-content">
-                           <h3>La palette du goût</h3>
-                             <p>Ménilmontant</p>
-                           
-                             <div class="heart">
-                                <input type="checkbox" id="heart" />
-                                <label for="heart">
-                                </label>        
-                            </div>
-                            </div>
-                        </article>
-                </a>
-                    <a href="Lanote-enchanté.html">
-                        <article class="card new">
-                            <div class="card__image">
-                                <img src="images/restaurants/menu-2.jpg" alt="">
-                            </div>
-                                <div class="card-content">
-                               <h3>La note enchantée</h3>
-                                 <p>Charonne </p>
-                                 <div class="heart1">
-                                    <input type="checkbox" id="heart1" />
-                                    <label for="heart1">
-                                    </label>        
-                                </div>
-                            
-                                </div>
-    
-                        </article>
-                    </a>
-                       
-                        <a href="./a-la-française.html">
-                            <article class="card">
-                                <div class="card__image ">
-                                    <img src="images/restaurants/menu-3.jpg" alt="">
-                                </div>
-                                
+              <div class="card-content">
+                <h3>À la française</h3>
+                <p>Cité Rouge</p>
+                <div class="heart2">
+                  <input type="checkbox" id="heart2" />
+                  <label for="heart2"> </label>
+                </div>
+              </div>
+            </article>
+          </a>
+          <a href="Le-délice-des-sens.html">
+            <article class="card">
+              <div class="card__image">
+                <img src="images/restaurants/menu-4.jpg" alt="" />
+              </div>
 
-                                    <div class="card-content">
-                                   <h3>À la française</h3>
-                                     <p>Cité Rouge</p>
-                                     <div class="heart2">
-                        
-                                        <input type="checkbox" id="heart2"/>
-                                        <label for="heart2">
-                                            
-                                      
-                                        </label>        
-                                        
-                                    </div>
-                                
-                                    </div>
-        
-                            </article>
-                        </a>
-                            <a href="Le-délice-des-sens.html">
-                                <article class="card ">
-                                    <div class="card__image  ">
-                                        <img src="images/restaurants/menu-4.jpg" alt="">
-                                    </div>
+              <div class="card-content">
+                <h3>Le délice des sens</h3>
+                <p>Folie-Méricourt</p>
 
-                                        <div class="card-content ">
-                                       <h3>Le délice des sens</h3>
-                                         <p>Folie-Méricourt</p>
-                                  
-                                         <div class="heart3">
-                                            <input type="checkbox" id="heart3" />
-                                            <label for="heart3">
-                                            </label>       
-                                        </div>
-                                    
-
-
-                                        </div>
-            
-                                </article>
-                            </a>
-            </div>   
-             </section>
+                <div class="heart3">
+                  <input type="checkbox" id="heart3" />
+                  <label for="heart3"> </label>
+                </div>
+              </div>
+            </article>
+          </a>
+        </div>
+      </section>
     </main>
     <footer>
-        
-          
-        <a  class="logo" href=""> <h2 >ohmyfood</h2></a>
-    
-    
-        <a href=""> <p> <i class="fa-solid fa-utensils"></i>Proposer un restaurant</p></a>
-        <a href=""> <p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p></a>
-        <a href=""> <p>Mentions légales</p></a>
-        <a href="mailto:oussama.kechairi@gmail.com"> <p>Contact</p></a>
-     
-    
+      <a class="logo" href=""> <h2>ohmyfood</h2></a>
+
+      <a href="">
+        <p><i class="fa-solid fa-utensils"></i>Proposer un restaurant</p></a
+      >
+      <a href="">
+        <p><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</p></a
+      >
+      <a href=""> <p>Mentions légales</p></a>
+      <a href="mailto:oussama.kechairi@gmail.com"> <p>Contact</p></a>
     </footer>
-   
-    
-   
-</body>
+  </body>
 </html>
