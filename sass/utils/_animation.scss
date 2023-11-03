@@ -1,0 +1,56 @@
+@keyframes content-appear {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.loader {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  animation: content-appear 20ms 3s forwards;
+  transform-origin: top;
+
+  &::after {
+    content: "Ohmyfood";
+    font-family: $logoFont;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      $primary 0%,
+      $blue 29%,
+      $threcolor 67%,
+      $colorfour 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    font-size: 2rem;
+  }
+}
+
+@keyframes textclip {
+  to {
+    background-position: -300% center;
+  }
+}
