@@ -260,23 +260,35 @@ header .header__arrow {
   margin: 0;
   position: relative;
 }
-.card-content .heart, .card-content .heart1, .card-content .heart2, .card-content .heart3 {
+.card-content .heart,
+.card-content .heart1,
+.card-content .heart2,
+.card-content .heart3 {
   position: absolute;
   right: 3rem;
   bottom: 3rem;
 }
-.card-content .heart input, .card-content .heart1 input, .card-content .heart2 input, .card-content .heart3 input {
+.card-content .heart input,
+.card-content .heart1 input,
+.card-content .heart2 input,
+.card-content .heart3 input {
   display: none;
 }
-.card-content .heart input + label:before, .card-content .heart1 input + label:before, .card-content .heart2 input + label:before, .card-content .heart3 input + label:before {
+.card-content .heart input + label:before,
+.card-content .heart1 input + label:before,
+.card-content .heart2 input + label:before,
+.card-content .heart3 input + label:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   content: "\f08a";
   font-size: x-large;
   position: absolute;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-.card-content .heart input:checked + label:after, .card-content .heart1 input:checked + label:after, .card-content .heart2 input:checked + label:after, .card-content .heart3 input:checked + label:after {
+.card-content .heart input:checked + label:after,
+.card-content .heart1 input:checked + label:after,
+.card-content .heart2 input:checked + label:after,
+.card-content .heart3 input:checked + label:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f004";
@@ -285,7 +297,7 @@ header .header__arrow {
   -webkit-background-clip: text;
   color: transparent;
   position: absolute;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-image: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
 }
 
@@ -397,23 +409,35 @@ footer .logo {
   margin: 0;
   position: relative;
 }
-.card-content .heart, .card-content .heart1, .card-content .heart2, .card-content .heart3 {
+.card-content .heart,
+.card-content .heart1,
+.card-content .heart2,
+.card-content .heart3 {
   position: absolute;
   right: 3rem;
   bottom: 3rem;
 }
-.card-content .heart input, .card-content .heart1 input, .card-content .heart2 input, .card-content .heart3 input {
+.card-content .heart input,
+.card-content .heart1 input,
+.card-content .heart2 input,
+.card-content .heart3 input {
   display: none;
 }
-.card-content .heart input + label:before, .card-content .heart1 input + label:before, .card-content .heart2 input + label:before, .card-content .heart3 input + label:before {
+.card-content .heart input + label:before,
+.card-content .heart1 input + label:before,
+.card-content .heart2 input + label:before,
+.card-content .heart3 input + label:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 400;
   content: "\f08a";
   font-size: x-large;
   position: absolute;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
-.card-content .heart input:checked + label:after, .card-content .heart1 input:checked + label:after, .card-content .heart2 input:checked + label:after, .card-content .heart3 input:checked + label:after {
+.card-content .heart input:checked + label:after,
+.card-content .heart1 input:checked + label:after,
+.card-content .heart2 input:checked + label:after,
+.card-content .heart3 input:checked + label:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f004";
@@ -422,7 +446,7 @@ footer .logo {
   -webkit-background-clip: text;
   color: transparent;
   position: absolute;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-image: linear-gradient(to top, #9356dc -11.44%, #ff79da 123.93%);
 }
 
@@ -526,6 +550,9 @@ footer .logo {
   transition: 300ms;
   animation: appear 1s both;
 }
+.menus .container .entry .card:nth-child(0) {
+  animation-delay: 0ms;
+}
 .menus .container .entry .card:nth-child(1) {
   animation-delay: 100ms;
 }
@@ -575,7 +602,6 @@ footer .logo {
   border-top-right-radius: 0.9375rem;
   border-bottom-right-radius: 0.9375rem;
   margin: -1rem -5rem -1rem 1rem;
-  position: relative;
 }
 .menus .container .entry .card:hover .menu-item-check {
   margin-right: -1rem;
