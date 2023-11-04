@@ -45,6 +45,9 @@
       padding: 0.5rem;
       padding-left: 1rem;
     }
+    .micon{
+      color: #7e7e7e;
+    }
 
     &::before {
       counter-increment: my-sec-counter;
