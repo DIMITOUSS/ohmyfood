@@ -162,6 +162,9 @@ header .header__arrow {
   padding: 0.5rem;
   padding-left: 1rem;
 }
+.fonctionnement li .micon {
+  color: #7e7e7e;
+}
 .fonctionnement li::before {
   counter-increment: my-sec-counter;
   content: counter(my-sec-counter);
